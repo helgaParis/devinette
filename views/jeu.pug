@@ -1,0 +1,41 @@
+doctype html
+html(lang='fr')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='css/jeu2.css')
+    script(src='/socket.io/socket.io.js')
+    script(src='js/jeulocal.js')
+    title Projet jeu multi-joueurs
+  body
+    header
+      #login
+        label(for='avatar')  Choissisez votre couleur d'avatar: 
+        input#avatar(type='color', name='avatar', value='#87bf87')
+      div
+        h1
+          | Qui devine mieux?
+      #repserver
+        p
+          | Chaque joueur essaie de trouver le numéro caché du serveur en premier.
+        p
+          | Vous notez votre numéro dans la case "Numéro sécret".
+        
+    section
+      #player1
+        p#name1=name
+        form#secretj1(action='', method='get')
+          label Ma supposition : 
+          input#guess1(type='number', name='guess1', min='0', max='10')
+          input#guessbutton(type='submit')
+        p
+          | Score: 
+          span#score1 score global: 
+          span#score1global=scoreG
+      #player2    
+    hr
+    footer
+      div
+        form(action='http://petrovic.ovh/')
+          button#exit(type='submit') Sortir du jeu

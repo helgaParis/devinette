@@ -1,0 +1,37 @@
+doctype html
+html(lang='fr')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0') 
+    link(rel='stylesheet', href='css/jeu2.css')
+    link(rel='stylesheet', href='css/pages.css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,600', rel='stylesheet')
+    link(rel="shortcut icon" href="images/favicon.ico")
+    script(src='js/forms.js')
+    title Creation de compte - bienvenue
+  body
+    header
+        span
+            a(href='http://petrovic.ovh')
+                img#logo(src='images/helga-rot.gif' alt='logo Helga Strobl')
+        ul
+          li
+            a(href='scores') Scores
+          li
+            a(href='index') Login
+
+    section
+      h1 Créez un compte pour jouer
+      h3=message
+      #showform
+        form#crea(method='POST', action='/creation')
+          input#pseudo(type='text', name='pseudo', placeholder='Votre pseudo ici', required)
+          p
+            input#pw(type='password', name='pw', maxlength='8', placeholder='Votre mot de passe ici', required)
+          p
+            input#ok(type='submit')
+    footer
+      hr
+      p Notice sur l'utilisation des données:
+      p
+        | Ceci est un projet de formation. La base de données enregistre votre pseudo, mot de passe et score. Les données sont supprimées après trois mois.

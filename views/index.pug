@@ -1,0 +1,32 @@
+doctype html
+html(lang='fr')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')   
+    link(rel='stylesheet', href='css/jeu2.css')
+    link(rel='stylesheet', href='css/pages.css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,600', rel='stylesheet')
+    link(rel="shortcut icon" href="images/favicon.ico")
+    
+    title Login - bienvenue
+  body
+    header
+        span
+            a(href='http://petrovic.ovh')
+                img#logo(src='images/helga-rot.gif' alt='logo Helga Strobl')
+        ul
+          li
+            a(href='scores') Scores
+          li
+            a(href='creacompte') Adhésion
+    section
+      h1 Bienvenue ! Connectez-vous :
+      h3=message
+      #showform
+        form#acceceder(method='POST', action='/connect')
+            input#pseudo(type='text', name='pseudo', placeholder='Votre pseudo ici', required)
+            p
+              input#pw(type='password', name='pw', maxlength='8', placeholder='Votre mot de passe ici', required)
+            p
+              input(type='submit')
+       

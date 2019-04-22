@@ -1,0 +1,115 @@
+/* Styles en commun */
+
+
+body{
+    background-color: #fffbeb;
+    background-image: url("http://petrovic.ovh/images/carreaux.jpg");
+    font-size: 1rem;
+    font-family:  fantasy;
+}
+a {
+   color: #A90101;
+}
+a:hover {
+    color : black;
+}
+a:active {
+    color : #0000CC;
+}
+a:visited {
+   color: #A90101;
+}
+
+h1{
+    color: #A90101;
+    font-size: 1.2rem;
+    font-stretch:  expanded;
+    text-align:  left;
+    margin-left: 15%;
+    margin-top: 25px;
+}
+header p{
+    font-size: 0.7rem;
+    text-align: left;
+    margin-left:5%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    }
+section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width:90%;
+    height: auto;
+}
+.accessform {
+    width : 80%;
+   padding-left: 5%;
+}
+#player1 {
+    min-width: 400px;
+    background-color: #87bf87;
+ 
+    margin: 3px;
+    padding-left: 3px;
+    -webkit-font-feature-settings:;
+    -moz-font-feature-settings:;
+}
+
+#player2 {
+    min-width: 300px;
+    border: rgb(165, 159, 159) solid 2px;
+    background-color: rgba(196, 202, 238, 0.3);
+    padding-left: 3px;
+}
+
+footer div {
+    text-align: right;
+    margin-right: 25%;
+}
+#exit {
+    color:  #A90101; 
+    border-color: #A90101; 
+    font-size: 1rem;
+    margin-top: 10px;
+}
+hr {
+    border-top: 3px dashed #A90101;
+}
+#guess1 {
+    font-size: 1.2 rem;
+}
+    
+#temp {
+    position: absolute;
+    display:  none;
+    z-index: 10;
+    margin-left: 20%;
+    margin-top:10%;
+}
+#temp2 {
+    position: absolute;
+    display:  none;
+    z-index: 10;
+    margin-left: 30%;
+    margin-top:9%;
+    width: 60%;
+    height: 50%;
+}
+
+#rT {
+    font-family: 'Open Sans', sans-serif;  
+    font-weight: 600;
+}
+#r1>p #r2>p{
+    font-family: 'Open Sans Condensed, sans-serif';
+    font-weight: 300;
+}
+
+#guessbutton {
+    font-size: 0.8rem;
+    background-color:  #A90101; 
+    color: white;
+    width : 15%;
+    z-index: 5;
+}

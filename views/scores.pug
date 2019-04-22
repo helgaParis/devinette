@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='css/jeu2.css')
+    link(rel='stylesheet', href='css/pages.css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,600', rel='stylesheet')
+    link(rel="shortcut icon" href="images/favicon.ico")
+    title Les scores des joueurs
+  body
+    header
+        span
+            a(href='http://petrovic.ovh')
+                img#logo(src='images/helga-rot.gif' alt='logo Helga Strobl')
+        ul
+          li
+            a(href='creacompte') Adhésion
+          li
+            a(href='index') Login
+    section
+        h1 Les scores des joueurs
+          #showscores
+             #tableau
+                table 
+                    each val in result  
+                        tr
+                            td.pseudo= val.pseudo
+                            td.score= val.score

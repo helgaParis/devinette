@@ -1,0 +1,267 @@
+
+/* ###########  Valide pour toutes tailles ############### */
+
+body {
+font-family : 'Open Sans', sans-serif;
+margin : 0;
+}
+header {
+font-family : 'Open Sans Condensed', sans-serif;
+font-weight : 300;
+top : 0;
+left : 0;
+background-color : #A90101;
+display : block;
+padding: 2%;
+padding-right: 0;
+}
+
+header a {
+color : white;
+text-decoration : none;
+}
+header a:hover {
+text-decoration : none;
+color : #E6E6E6;
+font-family : 'Open Sans', sans-serif;
+font-weight : 400;
+}
+header a:active {
+text-decoration : none;
+font-family : 'Open Sans', sans-serif;
+font-weight : 400;
+color :white;;
+padding-left: 2%;
+}
+header a:visited{
+    text-decoration : none;
+    font-family : 'Open Sans', sans-serif;
+    font-weight : 400;
+    color : #E6E6E6;
+    padding-left: 2%;
+    }
+h3 {
+    margin-left: 15%;;
+}
+section {
+font-weight : 400;
+margin : 3%;
+}
+
+footer {
+text-align : center;
+padding : 5px;
+font-size : 0.7rem;
+}
+#showscores {
+    display: block;
+    background: #E6E6E6;
+    width: 70%;
+    height: 50%;
+    scroll-behavior: auto;
+}
+#showform {
+    display: block;
+    width: 70%;
+    height: 40%;
+    margin: auto;
+}
+
+ /* ########  Valide pour tailles < 768 ############### */
+ @media only screen and (max-width:600px)
+ {
+    header {
+    margin : 3px 5px;
+    border-bottom : 1px solid #0000CC;
+    height : 42px;
+    }
+    
+    #logo {
+    width : 75px;
+    height : 38px;
+    }
+     
+    section {
+    margin : 0 20px;
+    height : 90%;
+    min-height : 600px;
+    box-sizing : border-box;
+    }
+    #showscores {
+        width: 95%;
+        height: 400px;
+        margin: auto;
+        margin-top: 0;
+    }
+    }
+@media only screen and (min-width:600px) {
+    header {
+    margin : 3px 5px;
+    border-bottom : 1px solid #0000CC;
+    height : 42px;
+    }
+
+    #logo {
+    width : 75px;
+    height : 38px;
+    }
+    
+    section {
+    margin : 0 20px;
+    height : 90%;
+    min-height : 600px;
+    box-sizing : border-box;
+    }
+    #showscores {
+        width: 95%;
+        height: 400px;
+        margin: auto;
+        margin-top: 0;
+}
+}
+
+
+/* ######## Valide pour tailles  entre 768 et 992 px ############ */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width:768px) {
+body {
+font-family : 'Open Sans', sans-serif;
+font-weight : 400;
+margin : 3px;
+}
+header {
+position : absolute;
+display : block;
+min-height : 800px;
+left : 0;
+width : 130px;
+background-color : #A90101;
+}
+
+#logo {
+width : 100px;
+height : 51px;
+}
+
+section {
+position : absolute;
+display : block;
+margin : 15px;
+left : 130px;
+height : 90%;
+min-width : 80%;
+box-sizing : border-box;
+}
+footer {
+position : absolute;
+display : block;
+width : 100%;
+bottom : 0;
+}
+}
+
+/* ####### Valide pour tailles entre 992 et 1200 px########### */
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width:992px) {
+body {
+font-family : 'Open Sans', sans-serif;
+font-weight : 400;
+margin : 3px;
+}
+header {
+position : absolute;
+display : block;
+height : 100%;
+left : 0;
+width : 210px;
+background-color : #A90101;
+}
+
+#logo {
+width : 150px;
+height : 77px;
+}
+
+section {
+position : absolute;
+display : block;
+margin : 20px;
+left : 220px;
+min-width : 75%;
+height : 90%;
+box-sizing : border-box;
+}
+footer {
+position : absolute;
+display : block;
+width : 100%;
+bottom : 0;
+}
+}
+  
+ 
+
+/* ###########  Valide pour tailles larger que 1200 px  ########### */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width:1200px) {
+body {
+font-family : 'Open Sans', sans-serif;
+font-weight : 400;
+margin : 3px;
+}
+header {
+position : absolute;
+display : block;
+min-height : 1000px;
+left : 0;
+width : 250px;
+background-color : #A90101;
+}
+
+#logo {
+width : 150px;
+height : 77px;
+}
+
+section {
+position : absolute;
+display : block;
+margin : 20px;
+left : 250px;
+min-width : 75%;
+height : 90%;
+box-sizing : border-box;
+}
+footer {
+position : absolute;
+display : block;
+width : 100%;
+bottom : 0;
+}
+}
+
+@font-face {
+{
+font-family : "'Open Sans'";
+font-style : normal;
+font-weight : 400;
+src : local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+}
+@font-face {
+{
+font-family : "'Open Sans'";
+font-style : normal;
+font-weight : 600;
+src : local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUuhs.ttf) format('truetype');
+}
+}
+@font-face {
+{
+font-family : "'Open Sans Condensed'";
+font-style : normal;
+font-weight : 300;
+src : local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMQg.ttf) format('truetype');
+}
+}

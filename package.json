@@ -1,0 +1,36 @@
+{
+  "name": "jeu2",
+  "version": "1.0.1",
+  "description": "jeu multiplayer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helgaParis/helga.git"
+  },
+  "author": "Helga Petrovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helgaParis/helga/issues"
+  },
+  "homepage": "https://github.com/helgaParis/helga#readme",
+  "dependencies": {
+    "ansi-colors": "^3.2.4",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mongo": "^0.1.0",
+    "mongod": "^2.0.0",
+    "mongodb": "^3.2.3",
+    "socket.io": "^2.2.0",
+    "url": "^0.11.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "atelier",
+    "back"
+  ]
+}
