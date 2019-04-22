@@ -43,3 +43,8 @@ Le serveur distribue les informations pour créer les avatars des autres (nom, c
 Il compare les estimations, indique les résultats et enregistre les scores. 
 
 Coté navigateur, les changes sont affichés.
+
+
+**Différences entre le depot et les fichiers en ligne** 
+jeulocal.js contient la vrai adresse du serveur.
+Sur le serveur, j'utilise pm2 au lieu de nodemon. 
