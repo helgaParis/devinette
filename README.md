@@ -48,3 +48,12 @@ Coté navigateur, les changes sont affichés.
 **Différences entre le depot et les fichiers en ligne** 
 jeulocal.js contient la vrai adresse du serveur.
 Sur le serveur, j'utilise pm2 au lieu de nodemon. 
+
+**Dernier changements**
+Serveur Nginx installé sur le vps. 
+Certbot installé et sites en https.
+Firewall installé sur le serveur.
+Nginx gère les apps en node. 
+Le jeu a sa propre sous-domain, gère par Nginx.
+Portes des apps changés (pour libérer 80)
+Code websocket adapté à https et gestion du domaine par Nginx.
