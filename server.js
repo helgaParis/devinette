@@ -2,7 +2,7 @@ const express = require('express');
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-var port = 80 //process.env.PORT || 80;
+var port = 8000 //process.env.PORT || 8000;
 
 const db = require('./db.js');
 const ObjectId = require('mongodb').ObjectId;
@@ -159,6 +159,8 @@ io.on('connection', function(socket){
   let randomNumber =  Math.floor(Math.random() * 11);
 
   socket.on('player', function (data) {
+    socket.setMaxListeners(50);  // Set the client's socket.io EE to max listeners: 50
+
     var player = {
       name: data.name, 
       color: data.color, 
