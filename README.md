@@ -57,3 +57,4 @@ Nginx gère les apps en node.
 Le jeu a sa propre sous-domain, gère par Nginx.
 Portes des apps changés (pour libérer 80)
 Code websocket adapté à https et gestion du domaine par Nginx.
+Server.js: changé max listeners pour socket
