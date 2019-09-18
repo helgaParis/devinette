@@ -2,21 +2,22 @@
 
 **Atelier Back - Projet de Formation**
 
-Lien vers le site: [http://petrovic.ovh](http://petrovic.ovh)
+Lien vers le site : [https://petrovic.ovh](http://petrovic.ovh)
+Lien vers le jeu et son serveur :  [https://jeu.petrovic.ovh](http://jeu.petrovic.ovh)
 
 **Hébergement**
 
-**Mon site et son serveur **sont installés sur un vps. Ce serveur sert des pages statiques et dynamiques, en html et pug.
+Mon site et son serveur sont installés sur un vps. Ce serveur sert des pages statiques et dynamiques, en html et pug.
 
-**Le jeu et son serveur** sont installés sur le même vps, sur une autre porte.
+Le jeu et son serveur sont installés sur le même vps, sur une autre porte.
 
 Le serveur utilise Express et quelques fonctionnalités de pug pour afficher le contenu de base.
 
 **Authentification**
 
-L'accès à ce jeu passe par une authentification contre une base de données Mongo. 
+L'accès à ce jeu passe via une authentification dans une base de données Mongo. 
 
-Pour le moment, j'utilise le service Mongo Atlas.
+La bd est maintenant installé sur une version de Mongo standalone sur le VPS, le db.js dans ce depot git utilise encore un compte Atlas, qui n'existe plus.
 
 MongoDb enregistre le pseudo, le mot de passe et le score. 
 
@@ -42,19 +43,20 @@ Le serveur distribue les informations pour créer les avatars des autres (nom, c
 
 Il compare les estimations, indique les résultats et enregistre les scores. 
 
-Coté navigateur, les changes sont affichés.
+Coté navigateur, les échanges sont affichés.
 
 
 **Différences entre le depot et les fichiers en ligne** 
-jeulocal.js contient la vrai adresse du serveur.
+le ficher jeulocal.js installé indique la vrai adresse du serveur.
 Sur le serveur, j'utilise pm2 au lieu de nodemon. 
 
 **Dernier changements**
 Serveur Nginx installé sur le vps. 
 Certbot installé et sites en https.
 Firewall installé sur le serveur.
-Nginx gère les apps en node. 
+Nginx est proxy pour les apps en node. 
 Le jeu a sa propre sous-domain, gère par Nginx.
 Portes des apps changés (pour libérer 80)
 Code websocket adapté à https et gestion du domaine par Nginx.
 Server.js: changé max listeners pour socket
+Installation Mongodb sur le VPS en standalone et transfert des données du db sur Atlas sur le db du VPS
